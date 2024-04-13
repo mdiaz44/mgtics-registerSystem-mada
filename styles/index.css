@@ -22,5 +22,8 @@
 }
 
 img.estudiante{
+    display:block;
     width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
