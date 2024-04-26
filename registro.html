@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="barra-menu">
+            <h1>Sistema de Registro</h1>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="articles.html">Articles</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+         
+    </header>
+    <main class="container">
+        <h3>Registra un Alumno Nuevo</h3>
+        <div>
+            <label>Nombre:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Edad:</label>
+            <input type="number">
+        </div>
+        <div>
+            <label for="gender-select">Seleccione su genero</label>
+            <select name="genders" id="gender-select">
+                <option value="">Genero</option>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email">
+        </div>
+        <div>
+            <label for="faculty-select">Facultad:</label>
+            <select name="facultys" id="faculty-select">
+                <option value="">Eliga una Facultad</option>
+                <option value="FCA">Facultad de Ciencias Administrativas</option>
+                <option value="FIM">Facultad de Ingenieria de Mexicali</option>
+                <option value="FCSyP">Facultad de Ciencias Sociales y politicas</option>
+            </select>
+        </div>
+        <div>
+            <label>Contraseña:</label>
+            <input type="password">
+        </div>
+        <div>
+            <label for="class-select">Facultad:</label>
+            <select name="classes" id="Class-select">
+                <option value="">Eliga las Materias de Interes</option>
+                <option value="Big">Big Data</option>
+                <option value="Mar">Marketing Digital</option>
+                <option value="Dec">Desarrollo Web multiplataforma</option>
+            </select>
+        </div>
+        <div>
+            <label></label>
+            <input type="submit">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
