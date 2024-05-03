@@ -24,27 +24,27 @@
         <h3>Registra un Alumno Nuevo</h3>
         <div>
             <label>Nombre:</label>
-            <input type="text">
+            <input type="text" id="txtNombre">
         </div>
         <div>
             <label>Edad:</label>
-            <input type="number">
+            <input type="number" id="txtEdad">
         </div>
         <div>
             <label for="gender-select">Seleccione su genero</label>
-            <select name="genders" id="gender-select">
+            <select name="genders" id="txtGender">
                 <option value="">Genero</option>
-                <option value="H">Hombre</option>
-                <option value="M">Mujer</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
             </select>
         </div>
         <div>
             <label>Email:</label>
-            <input type="email">
+            <input type="email" id="txtMail">
         </div>
         <div>
             <label for="faculty-select">Facultad:</label>
-            <select name="facultys" id="faculty-select">
+            <select name="facultys" id="txtFaculty">
                 <option value="">Eliga una Facultad</option>
                 <option value="FCA">Facultad de Ciencias Administrativas</option>
                 <option value="FIM">Facultad de Ingenieria de Mexicali</option>
@@ -53,26 +53,24 @@
         </div>
         <div>
             <label>Contraseña:</label>
-            <input type="password">
+            <input type="password" id="txtPass">
         </div>
         <div>
-            <label for="class-select">Facultad:</label>
-            <select name="classes" id="Class-select">
+            <label for="class-select">Materias:</label>
+            <select name="classes" id="txtClasses">
                 <option value="">Eliga las Materias de Interes</option>
-                <option value="Big">Big Data</option>
-                <option value="Mar">Marketing Digital</option>
-                <option value="Dec">Desarrollo Web multiplataforma</option>
+                <option value="Big Data">Big Data</option>
+                <option value="Marketing Digital">Marketing Digital</option>
+                <option value="Desarrollo Web multiplataforma">Desarrollo Web multiplataforma</option>
             </select>
         </div>
-        <div>
-            <label></label>
-            <input type="submit">
-        </div>
+
+        <buttom onclick="registrar()">registrar</buttom>
     </main>
     <footer>
 
     </footer>
     
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/register.js"></script>
 </body>
 </html>
