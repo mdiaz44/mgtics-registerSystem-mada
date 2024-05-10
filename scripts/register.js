@@ -8,7 +8,7 @@ function Student(name,age,gender,mail,faculty,pass,classes){
     this.mail=mail;
     this.faculty=faculty;
     this.pass=pass;
-    this.subject=classes;
+    this.classes=classes;
 }
 
 //validación
@@ -54,6 +54,7 @@ function registrar(){
     let nuevoAlumno = new Student(inputNombre,inputEdad,inputgenders,inputmail,inputfaculty,inputpass,inputClasses);
     if(isValid(nuevoAlumno)){
         students.push(nuevoAlumno);
+        displayCards();
         console.log(students);
     }else{
         alert("Por favor completa los campos");

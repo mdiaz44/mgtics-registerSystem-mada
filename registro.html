@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/display.css">
     <title>Document</title>
 </head>
 <body>
@@ -65,12 +66,34 @@
             </select>
         </div>
 
-        <buttom onclick="registrar()">registrar</buttom>
+        <button onclick="registrar()">registrar</button>
+
+        
+            <!-- edad, bbbb-->
+
+            <h3>Estudiantes registrados</h3>
+            <div id="studentList">
+
+
+            </div>
+
+            <table id="display">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Genero</th>
+                    <th>Email</th>
+                    <th>Facultad</th>
+                    <th>Contraseña</th>
+                    <th>Materia</th>
+                </tr>
+            </table>
     </main>
     <footer>
 
     </footer>
     
     <script src="./scripts/register.js"></script>
+    <script src="./scripts/display.js"></script>
 </body>
 </html>
