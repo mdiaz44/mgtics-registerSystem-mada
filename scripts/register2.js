@@ -54,18 +54,50 @@ function registrar(){
 
     let nuevoAlumno = new Student(inputNombre, inputEdad, inputGenders, inputMail, inputFaculty, inputPass, inputClasses);
     if(isValid(nuevoAlumno)){
-        students.push(nuevoAlumno);
+        //students.push(nuevoAlumno);
         // Llama a la función para mostrar estudiantes como tabla
-        displayStudentsAsTable();
-        console.log(students);
+        insertToDataBase(nuevoAlumno);
+        //displayStudentsAsTable();
+        //console.log(students);
     } else {
         alert("Por favor completa los campos");
     }
 }
 
-function init(){
-    let student1 = new Student("Samuel", 99, "Hombre", "samuel@gmail.com", "Facultad de Ciencias Administrativas", "pepe12", "Big Data");
-    students.push(student1);
-}
+function insertToDataBase(){
+    $.ajax({
+        url:"./app/register.php",
+        method: "POST",
+        data:{
+            name:newStudent.name
+            age:newStudent.age
+            gender:newStudent.gender
+            mail:newStudent.mail
+            faculty:newStudent.faculty
+            pass:newStudent.pass
+            classes:newStudent.classes
+        },
+        dataType:"json",
+        success:function(response){
+            if(response.success){
+                console.log(response);
+                setTimeout(function(){
+                location.reload();
+                },1000);
+            }else{
+                console.log("Error, por favor intente de nuevo")
+            }
+        },
+        error:function(xhr,status,error){
+            console.log("Error de conexion");
+            console.error(error);
+        }
+    })
+} 
 
-window.onload = init; // Espera a renderizar el HTML
+//function init(){
+    //let student1 = new Student("Samuel", 99, "Hombre", "samuel@gmail.com", "Facultad de Ciencias Administrativas", "pepe12", "Big Data");
+    //students.push(student1);
+//}
+
+//window.onload = init; // Espera a renderizar el HTML

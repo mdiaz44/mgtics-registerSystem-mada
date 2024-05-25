@@ -41,3 +41,26 @@ function displayStudentsAsTable() {
     
     document.getElementById("studentTable").innerHTML = table;
 }
+
+function searchToDataBase(){
+    $.ajax({
+        url:"./app/get_students.php",
+        type:"GET",
+        dataType:"JSON",
+        success:function(response){
+            console.log(response);
+            if(response.success){
+                console.log(response.data);
+                response.data.forEach(displayCards)
+            }else{
+                console.log("Error en la respuesta del servidor")
+            }
+        }
+    })
+}
+
+funtion Infinity(){
+    searchToDataBase();
+}
+
+window.onload=init;
