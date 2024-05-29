@@ -4,8 +4,8 @@ function displayCards(universidad){
     //let student=students[i];
         card+=`
         <div id="${universidad.id}" class='universidad'>
-        <h4>Nombre: ${universidad.faculty}</h4>
-        <p>Edad: ${universidad.campus}</p>
+        <h4>Facultad: ${universidad.faculty}</h4>
+        <p>Campus: ${universidad.campus}</p>
         <button>Eliminar</button>
         </div>
         `;
