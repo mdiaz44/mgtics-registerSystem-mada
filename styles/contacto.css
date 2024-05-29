@@ -1,6 +1,6 @@
 img.contacto{
     display:block;
-    width: 60%;
+    width: 200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -26,4 +26,16 @@ img.contacto{
 .menu a:hover{
     color: #ffcc00;
     text-decoration: underline;
+}
+
+.redes {
+    border: 1px solid #e1e1e1;
+    background-color: #587769;
+    border-radius: 5px;
+    padding: 17px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

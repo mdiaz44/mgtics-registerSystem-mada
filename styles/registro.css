@@ -1,0 +1,33 @@
+.login {
+    border: 1px solid #e1e1e1;
+    background-color: #587769;
+    border-radius: 5px;
+    padding: 17px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cartas {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 17px;
+    width: 1000px;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cartas2 {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 17px;
+    width: 1000px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

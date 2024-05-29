@@ -5,8 +5,8 @@
 
 body{
     font-family: arial;
-    background-color: black;
-    color: white;
+    background-color: #A4C3B2;
+    color: black;
 }
 p{
     line-height: 2;
@@ -37,8 +37,8 @@ img {
     display: block;
     border: 1px solid white;
     margin: 10px auto;
-    background-color: #dab10d;
-    color:black;
+    background-color: #6B9080;
+    color: black;
     padding: 20px;
     width: 150px;
     text-align: center;
