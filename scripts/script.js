@@ -86,12 +86,12 @@ sumar(5,4);
 
 
 // esto tampoco quiero que aparezca -->  function calcularTaxes(ingresos, egresos){
-    let subtotal = ingresos-egresos;
-    let total = subtotal*0.02;
-    document.write(`
-    <p class="container">Tus taxes son: $${total} <p>
-    `);
-    console.log(total);
+    //let subtotal = ingresos-egresos;
+    //let total = subtotal*0.02;
+    //document.write(`
+    //<p class="container">Tus taxes son: $${total} <p>
+    //`);
+    //console.log(total);
 // }
 
 calcularTaxes(sumar(100,200),sumar(10,8));

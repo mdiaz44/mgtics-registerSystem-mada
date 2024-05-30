@@ -27,7 +27,9 @@ function register(){
 
 
     let nuevaUniversidad = new Universidad(inputfaculty,inputcampus);
+    saveItems(nuevaUniversidad);
     console.log(new Universidad);
+    
     
     if(isValid(nuevaUniversidad)){
         //students.push(nuevoAlumno);

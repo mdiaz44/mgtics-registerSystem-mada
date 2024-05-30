@@ -1,4 +1,4 @@
-function saveFacultades(item){
+function saveItems(item){
     console.log(item);
     let val = JSON.stringify(item);
     console.log(val);
