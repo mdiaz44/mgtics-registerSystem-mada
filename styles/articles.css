@@ -9,12 +9,33 @@
     padding: 17px;
     width: 1200px;
     position: absolute;
-    top: 140%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 .class-div {
     margin: 0 auto;
     width: 450px;
+}
+
+p{
+    line-height: 2;
+}
+
+h1, h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin: 10px;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/display.css">
     <link rel="stylesheet" href="./styles/registro.css">
+    <link rel="stylesheet" href="./styles/faculty.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <h1>Sistema de Registro</h1>
             <nav class="menu">
                 <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
+                <a href="projects.html">Campus</a>
                 <a href="articles.html">Classes</a>
                 <a href="contacto.html">Contacto</a>
                 <a href="facultades.html">Facultades</a>
@@ -27,28 +28,28 @@
     <div class="login">
         <h3>Registra un Alumno Nuevo</h3>
         <div>
-            <label>Nombre:</label>
-            <input type="text" id="txtNombre">
+            <label class="word">Nombre:</label>
+            <input type="text" id="txtNombre" class="rgs1">
         </div>
         <div>
-            <label>Edad:</label>
-            <input type="number" id="txtEdad">
+            <label class="word">Edad:</label>
+            <input type="number" id="txtEdad" class="rgs1">
         </div>
         <div>
-            <label for="gender-select">Seleccione su genero</label>
-            <select name="genders" id="txtGender">
+            <label for="gender-select" class="word">Seleccione su genero</label>
+            <select name="genders" id="txtGender" class="rgs2">
                 <option value="">Genero</option>
                 <option value="Hombre">Hombre</option>
                 <option value="Mujer">Mujer</option>
             </select>
         </div>
         <div>
-            <label>Email:</label>
-            <input type="email" id="txtMail">
+            <label class="word">Email:</label>
+            <input type="email" id="txtMail" class="rgs1">
         </div>
         <div>
-            <label for="faculty-select">Facultad:</label>
-            <select name="facultys" id="txtFaculty">
+            <label for="faculty-select" class="word">Facultad:</label>
+            <select name="facultys" id="txtFaculty" class="rgs1">
                 <option value="">Eliga una Facultad</option>
                 <option value="FCA">Facultad de Ciencias Administrativas</option>
                 <option value="FIM">Facultad de Ingenieria de Mexicali</option>
@@ -56,12 +57,12 @@
             </select>
         </div>
         <div>
-            <label>Contraseña:</label>
-            <input type="password" id="txtPass">
+            <label class="word">Contraseña:</label>
+            <input type="password" id="txtPass" class="rgs1">
         </div>
         <div>
-            <label for="class-select">Materias:</label>
-            <select name="classes" id="txtClasses">
+            <label for="class-select" class="word">Materias:</label>
+            <select name="classes" id="txtClasses" class="rgs1">
                 <option value="">Eliga las Materias de Interes</option>
                 <option value="Big Data">Big Data</option>
                 <option value="Marketing Digital">Marketing Digital</option>
@@ -69,7 +70,7 @@
             </select>
         </div>
    
-        <button onclick="registrar()">registrar</button>
+        <button class="btn2" onclick="registrar()">registrar</button>
     </div>
     <div class="cartas">    
             <!-- edad, bbbb-->
